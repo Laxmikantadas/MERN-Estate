@@ -4,6 +4,7 @@ import Signin from "./page/Signin"
 import Signup from "./page/Signup"
 import About from "./page/About"
 import Profile from "./page/Profile"
+import Header from "./components/Header"
 
 
 
@@ -11,8 +12,9 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <Header />
         <Routes>
-         <Route path="/Home" element={<Home/>}></Route>
+         <Route path="/" element={<Home/>}></Route>
          <Route path="/Sign-In" element={<Signin/>}></Route>
          <Route path="/Sign_up" element={<Signup/>}></Route>
          <Route path="/About" element={<About/>}></Route>
